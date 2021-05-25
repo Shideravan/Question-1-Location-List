@@ -32,24 +32,24 @@ export default class Navigation extends Component {
                         <ul className="pl-0" data-testid="location-list">
                                 {/*Use this li for rendering each location item as it contains all the data-testid attributes required for the tests to pass*/}
 
-                                {/*<li key={'row' + index} data-testid={'location-' + index}*/}
-                                {/*    className="layout-row justify-content-between align-items-center mr-8 pl-40 relative">*/}
-                                {/*    <div className="layout-column justify-content-start align-items-center handle">*/}
-                                {/*        <i className={this.getClasses('marker', index)}>{this.isLast(index) ? 'room' : 'radio_button_checked'}</i>*/}
-                                {/*        <i className={this.getClasses('dots', index)}>more_vert</i>*/}
-                                {/*    </div>*/}
-                                {/*    <div className="location-name">*/}
-                                {/*        <p className="caption text-start mb-4" data-testid="location">{location}</p>*/}
-                                {/*    </div>*/}
-                                {/*    <div>*/}
-                                {/*        <button className="icon-only small mx-0" data-testid="up-button">*/}
-                                {/*            <i className="material-icons">arrow_upward</i>*/}
-                                {/*        </button>*/}
-                                {/*        <button className="icon-only small mx-0" data-testid="down-button">*/}
-                                {/*            <i className="material-icons">arrow_downward</i>*/}
-                                {/*        </button>*/}
-                                {/*    </div>*/}
-                                {/*</li>*/}
+                                <li key={'row' + index} data-testid={'location-' + index}
+                                   className="layout-row justify-content-between align-items-center mr-8 pl-40 relative">
+                                   <div className="layout-column justify-content-start align-items-center handle">
+                                       <i className={this.getClasses('marker', index)}>{this.isLast(index) ? 'room' : 'radio_button_checked'}</i>
+                                       <i className={this.getClasses('dots', index)}>more_vert</i>
+                                   </div>
+                                   <div className="location-name">
+                                       <p className="caption text-start mb-4" data-testid="location">{location}</p>
+                                   </div>
+                                   <div>
+                                       <button className="icon-only small mx-0" data-testid="up-button">
+                                           <i className="material-icons">arrow_upward</i>
+                                       </button>
+                                       <button className="icon-only small mx-0" data-testid="down-button">
+                                           <i className="material-icons">arrow_downward</i>
+                                       </button>
+                                   </div>
+                                </li> 
                         </ul>
                     </section>
                     <section className="flex-auto">
